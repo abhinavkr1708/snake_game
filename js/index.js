@@ -4,7 +4,7 @@ const foodSound = new Audio('music/food.mp3');
 const gameOverSound = new Audio('music/gameover.mp3');
 const moveSound = new Audio('music/move.mp3');
 const musicSound = new Audio('music/music.mp3');
-let speed = 25;
+let speed = 19;
 let score = 0;
 let lastPaintTime = 0;
 let snakeArr = [
@@ -119,26 +119,26 @@ window.addEventListener('keydown', e =>{
     inputDir = {x: 0, y: 1} // Start the game
     moveSound.play();
     switch (e.key) {
-        case "W":
-            console.log("W");
+        case "ArrowUp":
+            console.log("ArrowUp");
             inputDir.x = 0;
             inputDir.y = -1;
             break;
 
-        case "S":
-            console.log("S");
+        case "ArrowDown":
+            console.log("ArrowDown");
             inputDir.x = 0;
             inputDir.y = 1;
             break;
 
-        case "A":
-            console.log("A");
+        case "ArrowLeft":
+            console.log("ArrowLeft");
             inputDir.x = -1;
             inputDir.y = 0;
             break;
 
-        case "D":
-            console.log("D");
+        case "ArrowRight":
+            console.log("ArrowRight");
             inputDir.x = 1;
             inputDir.y = 0;
             break;
